@@ -25,7 +25,7 @@ Siéntete libre de contribuir con mejoras, correcciones de errores o ideas para 
 
 ## Créditos
 
-Este tutorial está inspirado en el tutorial de jQuery de Codebar.
+Este repositorio sigue el tutorial de jQuery de [Codebar](https://tutorials.codebar.io/js/lesson3/tutorial.html).
 
 ## Licencia
 
