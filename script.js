@@ -2,7 +2,7 @@
 
 function addToList(item){
 
-    $('#items').append(`<li>${item}</li>`);
+    $('#items').append(`<li>${item}<span class='label pending'>Pending</span></li>`);
 
 }
 
@@ -15,3 +15,11 @@ $(document).on('click','#add-to-list', function(){
     //a la lista). 
     //Se puede hacer un .trigger('focus') o un .focus() pero creo q el ultimo esta deprecated
 });
+
+
+$(document).on('click', '.pending', function() {
+    var li_node = $(this).parent();
+    li_node.append('<span class="label success">Done!</span>');
+    $(this).remove(); // Remove the 'Pending' label
+});
+
